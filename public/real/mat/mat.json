@@ -1,0 +1,333 @@
+[
+ {
+  "name": "stucco_cream",
+  "files": {
+   "albedo": "mat/stucco_cream_albedo.jpg"
+  },
+  "tileM": [
+   4.0,
+   4.0
+  ],
+  "usedFor": "볼트, 아치, 벽의 무늬 없는 칠한 회반죽(크림색) 면. 금박/코퍼가 없는 평면",
+  "colorNote": "크림색 CREAM(196,180,148) 기준. 사진의 코퍼 바탕색에서 화이트밸런스를 잡은 색에 약한 얼룩과 결만 넣음(색은 사진 기반, 무늬는 절차적). roughness 0.85",
+  "sources": [
+   "interior_019",
+   "interior_017"
+  ],
+  "px": [
+   1024,
+   1024
+  ]
+ },
+ {
+  "name": "marble_red",
+  "files": {
+   "albedo": "mat/marble_red_albedo.jpg"
+  },
+  "tileM": [
+   2.05,
+   4.34
+  ],
+  "usedFor": "거대 필라스터와 피어 정면, 기둥 몸체, 제단부 벽기둥의 붉은 대리석. 세로로 긴 타일(2.05 x 4.34 m)",
+  "colorNote": "낮 사진(interior_084) 필라스터 정면을 원근 보정해 만든 와인빛 적갈색(평균 108,66,63) 바탕 + 크림 흰 실핏줄과 회백색 화석 반점. 광택 대리석 roughness 0.15~0.25 권장. 타일 크기는 필라스터 폭 약 1.3 m 가정에서 나온 값(±25%)",
+  "sources": [
+   "interior_084"
+  ],
+  "px": [
+   1024,
+   2167
+  ]
+ },
+ {
+  "name": "marble_green",
+  "files": {
+   "albedo": "mat/marble_green_albedo.jpg"
+  },
+  "tileM": [
+   2.4,
+   2.4
+  ],
+  "usedFor": "피어의 옆면과 필라스터 사이 벽 판, 제단 벽감 뒷벽의 회녹색 대리석",
+  "colorNote": "어두운 회녹색(평균 98,104,96) 바탕에 연한 구름 무늬. 광택 대리석 roughness 0.2 권장",
+  "sources": [
+   "interior_023"
+  ],
+  "px": [
+   1024,
+   1024
+  ]
+ },
+ {
+  "name": "marble_blue",
+  "files": {
+   "albedo": "mat/marble_blue_albedo.jpg"
+  },
+  "tileM": [
+   4.2,
+   4.2
+  ],
+  "usedFor": "대엔타블러처의 프리즈 띠(기둥머리 위 푸른 회색 대리석 띠), 위층 엔타블러처 프리즈",
+  "colorNote": "푸른 회색(평균 86,100,110)에 흰 실핏줄. 광택 roughness 0.25 권장",
+  "sources": [
+   "interior_017",
+   "interior_019"
+  ],
+  "px": [
+   1024,
+   1024
+  ]
+ },
+ {
+  "name": "marble_cream",
+  "files": {
+   "albedo": "mat/marble_cream_albedo.jpg"
+  },
+  "tileM": [
+   1.5,
+   1.5
+  ],
+  "usedFor": "제단, 난간(발루스트레이드) 상판과 기둥, 기단(플린스), 몰딩의 크림/연회색 대리석",
+  "colorNote": "크림 백색(평균 약 213,203,186)에 회갈색 가는 실금. 색은 난간 상판(interior_025)과 제단 대리석(interior_007) 실측을 화이트밸런스해 정함. 사진 패치 이어 붙이기는 블록 티가 나서 결 무늬는 절차적으로 다시 만듦. roughness 0.25",
+  "sources": [
+   "interior_025",
+   "interior_007"
+  ],
+  "px": [
+   1024,
+   1024
+  ]
+ },
+ {
+  "name": "gold_leaf",
+  "files": {
+   "albedo": "mat/gold_leaf_albedo.jpg",
+   "rough": "mat/gold_leaf_rough.jpg"
+  },
+  "tileM": [
+   0.5,
+   0.5
+  ],
+  "usedFor": "기하로 만든 주두(코린트식 아칸서스), 몰딩, 코니스의 금박 면 일반. metalness 1, roughness 0.3 내외 권장",
+  "colorNote": "금박 기준색 (200,160,80)에 약한 얼룩. 색은 사진(017, 019 금박 화소)에서 보정한 목표값. 무늬는 절차적",
+  "sources": [
+   "interior_017",
+   "interior_019"
+  ],
+  "px": [
+   512,
+   512
+  ]
+ },
+ {
+  "name": "frieze_rinceau",
+  "files": {
+   "albedo": "mat/frieze_rinceau_albedo.jpg",
+   "rough": "mat/frieze_rinceau_rough.jpg",
+   "height": "mat/frieze_rinceau_height.jpg",
+   "metal": "mat/frieze_rinceau_metal.jpg"
+  },
+  "tileM": [
+   1.03,
+   0.76
+  ],
+  "usedFor": "볼트 그림 패널 테두리, 코니스 아래 프리즈 등 금박 장식 띠: 위아래 금박 달걀(에그) 몰딩 + 가운데 월계 잎 타원 교차 무늬와 금 로제트. U로만 반복, V는 clamp(띠 높이 전체 = 텍스처 세로)",
+  "colorNote": "크림 스투코 바탕(196,180,148로 맞춤) + 금박(평균 약 186,150,76). metal은 금박 마스크, height는 밝기 하이패스로 만든 부조 근사",
+  "sources": [
+   "interior_017"
+  ],
+  "wrapV": "clamp",
+  "periodNote": "텍스처 가로 1장 = 로제트 2주기. 실제 크기는 코퍼 간격(1.1 m 추정)과 같은 사진 안 비례로 추정, ±30%",
+  "px": [
+   1024,
+   754
+  ]
+ },
+ {
+  "name": "coffer_oct",
+  "files": {
+   "albedo": "mat/coffer_oct_albedo.jpg",
+   "rough": "mat/coffer_oct_rough.jpg",
+   "height": "mat/coffer_oct_height.jpg",
+   "metal": "mat/coffer_oct_metal.jpg"
+  },
+  "tileM": [
+   4.4,
+   4.4
+  ],
+  "usedFor": "아치 안쪽(소피트)과 원통 볼트의 팔각 격자(코퍼) 면. 팔각 코퍼(짙은 청록 바닥 + 금박 로제트) 사이에 마름모 작은 코퍼(진홍 바닥 + 작은 금 로제트). 타일 1장 = 4x4 칸",
+  "colorNote": "크림색 바탕(평균 196,180,148으로 맞춤)에 금박 몰딩과 로제트, 짙은 청남색 코퍼 바닥. metal 맵은 금박 마스크(금속도로 써도 됨). height는 실제 깊이 구조를 단순화한 계단식 근사",
+  "sources": [
+   "interior_019",
+   "interior_017"
+  ],
+  "pitchM": 1.1,
+  "note": "칸 간격(팔각 중심 사이) 약 1.1 m 추정(±25%). 아치 소피트 폭에 2칸이 들어가도록 맞추면 됨",
+  "px": [
+   1024,
+   1024
+  ]
+ },
+ {
+  "name": "soffit_oct2",
+  "files": {
+   "albedo": "mat/soffit_oct2_albedo.jpg",
+   "rough": "mat/soffit_oct2_rough.jpg",
+   "height": "mat/soffit_oct2_height.jpg",
+   "metal": "mat/soffit_oct2_metal.jpg"
+  },
+  "tileM": [
+   2.75,
+   4.4
+  ],
+  "usedFor": "횡단 아치(크로싱 아치, 팔 볼트의 띠 아치) 소피트 한 줄 전체: 금박 구슬 테두리 + 팔각 코퍼 2열 + 가장자리 삼각 코퍼. U 방향은 반복하지 말고(clamp) 소피트 폭 전체에 한 번, V(아치 길이 방향)로만 반복",
+  "colorNote": "크림 바탕, 금박 테두리, 짙은 청남색 코퍼 바닥. coffer_oct와 같은 색 보정",
+  "sources": [
+   "interior_019"
+  ],
+  "pitchM": 1.1,
+  "wrapU": "clamp",
+  "note": "가로 2.5칸(테두리 포함) = 소피트 폭. 실제 소피트 폭에 맞춰 늘려 써도 됨",
+  "px": [
+   640,
+   1024
+  ]
+ },
+ {
+  "name": "floor_checker",
+  "files": {
+   "albedo": "mat/floor_checker_albedo.jpg",
+   "rough": "mat/floor_checker_rough.jpg",
+   "height": "mat/floor_checker_height.jpg"
+  },
+  "tileM": [
+   2.88,
+   2.88
+  ],
+  "usedFor": "신랑(nave)과 팔(arm)의 통로 바닥: 흰 대리석과 청회색 대리석의 45도 체커(마름모). 텍스처 축이 통로 방향과 평행하게 두면 사진처럼 마름모로 보임. 1장 = 4x4 주기",
+  "colorNote": "흰색(목표 [222, 221, 214])과 청회색([100, 107, 110]). 무늬 색과 크기는 사진(interior_084 낮 사진, 004, 006)에서, 돌 결은 다른 대리석 텍스처의 결을 재사용. 줄눈 약간 어둡게, roughness 0.18 내외(광택)",
+  "sources": [
+   "interior_084",
+   "interior_004",
+   "interior_006",
+   "interior_025",
+   "interior_007",
+   "interior_017",
+   "interior_019"
+  ],
+  "unitM": {
+   "diamondDiagonal": 0.72,
+   "squareSide": 0.509
+  },
+  "note": "마름모 대각선(같은 색 사이 주기) 0.72 m 추정(±15%, 정사각 한 변 약 0.51 m). interior_084 원본에서 체커가 정사각이라는 조건으로 지평선과 초점거리를 풀고(행 5개에서 일관), 눈높이 1.6 m와 맨 앞줄 의자 등판 폭(0.42~0.45 m)으로 축척을 맞춤",
+  "px": [
+   2048,
+   2048
+  ]
+ },
+ {
+  "name": "floor_medallion",
+  "files": {
+   "albedo": "mat/floor_medallion_albedo.jpg",
+   "rough": "mat/floor_medallion_rough.jpg",
+   "mask": "mat/floor_medallion_mask.jpg"
+  },
+  "tileM": [
+   7.25,
+   7.25
+  ],
+  "usedFor": "교차부(돔 바로 아래) 바닥 중앙 원형 메달리온. 반복하지 않는 단일 텍스처: 중심을 원점(0,0,0)에 두고 한 변 7.25 m 정사각 평면에 붙임. 텍스처 위쪽이 제단(-z) 방향. mask(흰=메달리온, 반지름 3.5 m)로 바깥 바닥과 섞을 수 있음",
+  "colorNote": "흰 대리석 원판(반지름 2.5 m 추정) 안에 연어색 24각 별(사이사이 회색 삼각), 안쪽 짙은 고리와 중앙 짙은 문양, 바깥에 48칸 톱니(덴틸) 띠. 무늬 배치는 사진 두 장을 바닥 평면으로 원근 보정해 읽음. 중앙 문양(모노그램으로 보임)은 해상도가 낮아 8갈래 별로 단순화",
+  "sources": [
+   "interior_011",
+   "interior_022",
+   "interior_025",
+   "interior_007",
+   "interior_017",
+   "interior_019"
+  ],
+  "radiiM": {
+   "centerMotif": 0.72,
+   "innerDarkRing": [
+    0.83,
+    0.95
+   ],
+   "starTip": 2.25,
+   "whiteDisc": 2.5,
+   "dentilBand": [
+    2.55,
+    3.33
+   ],
+   "maskEdge": 3.5
+  },
+  "note": "전체 크기 ±25% (의자 폭 0.42 m를 기준으로 두 사진에서 4.5~5.5 m 지름 추정)",
+  "px": [
+   2048,
+   2048
+  ]
+ },
+ {
+  "name": "marble_salmon",
+  "files": {
+   "albedo": "mat/marble_salmon_albedo.jpg"
+  },
+  "tileM": [
+   1.5,
+   1.5
+  ],
+  "usedFor": "교차부 바닥의 연어색(살구색) 대리석 바탕 면과 메달리온 바깥 패널, 바닥 띠",
+  "colorNote": "연어색(206,160,136). 색은 교차부 바닥 사진에서 흰 대리석 대비 비율로 추정. 돌 결은 크림/붉은 대리석 결을 섞어 재사용(사진에 가까운 바닥 결 자료 없음). roughness 0.2",
+  "sources": [
+   "interior_022",
+   "interior_006",
+   "interior_011",
+   "interior_007",
+   "interior_019",
+   "interior_025"
+  ],
+  "px": [
+   1024,
+   1024
+  ]
+ },
+ {
+  "name": "wood_oak",
+  "files": {
+   "albedo": "mat/wood_oak_albedo.jpg"
+  },
+  "tileM": [
+   1.2,
+   1.2
+  ],
+  "usedFor": "신자석 몸체(좌판, 등판 레일, 옆판 평면부), 고해소, 문짝 등 일반 참나무 면. 결이 U(가로) 방향",
+  "colorNote": "짙은 참나무 갈색(평균 104,70,46): 낮 사진 interior_084의 신자석 나무색을 기준으로 함. 결 무늬는 절차적으로 생성(사진 해상도로는 결을 뽑을 수 없었음). roughness 0.5",
+  "sources": [
+   "interior_084"
+  ],
+  "px": [
+   1024,
+   1024
+  ]
+ },
+ {
+  "name": "pew_panel",
+  "files": {
+   "albedo": "mat/pew_panel_albedo.jpg",
+   "height": "mat/pew_panel_height.jpg"
+  },
+  "tileM": [
+   0.3,
+   0.537
+  ],
+  "usedFor": "신자석(장의자) 앞판/등판의 판넬 띠: 어두운 참나무 틀 + 돋을 판넬 + 구슬 몰딩 테두리. U로만 반복(판넬 1칸=1장), V는 clamp. 위쪽 책받침 레일과 아래 굽은 포함하지 않음",
+  "colorNote": "짙은 참나무 갈색(평균 [104, 70, 46] 맞춤). 낮 사진 원본에서 정면으로 보이는 판넬 1칸을 잘라 이음매 처리. 의자(신자석 앞의 벤트우드 의자)는 따로 모델링 필요. roughness 0.5 권장",
+  "sources": [
+   "interior_084"
+  ],
+  "wrapV": "clamp",
+  "note": "판넬 간격 0.30 m는 앞 의자 등판 폭과 비교한 추정(±20%)",
+  "px": [
+   512,
+   916
+  ]
+ }
+]

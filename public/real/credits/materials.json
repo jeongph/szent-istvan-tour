@@ -1,0 +1,90 @@
+[
+ {
+  "title": "File:Aziz Stefan Bazilikası 05.jpg",
+  "author": "Nabbegat",
+  "license": "CC BY 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Aziz_Stefan_Bazilikası_05.jpg",
+  "usedFor": "텍스처: floor_checker",
+  "thumbName": "interior_004"
+ },
+ {
+  "title": "File:Basilica de San Esteban - panoramio (2).jpg",
+  "author": "dinamicline",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Basilica_de_San_Esteban_-_panoramio_(2).jpg",
+  "usedFor": "텍스처: floor_checker, marble_salmon",
+  "thumbName": "interior_006"
+ },
+ {
+  "title": "File:Basilica de San Esteban - panoramio (3).jpg",
+  "author": "dinamicline",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Basilica_de_San_Esteban_-_panoramio_(3).jpg",
+  "usedFor": "텍스처: floor_checker, floor_medallion, marble_cream, marble_salmon",
+  "thumbName": "interior_007"
+ },
+ {
+  "title": "File:Basílica - interior (1503070133).jpg",
+  "author": "Leandro Neumann Ciuffo",
+  "license": "CC BY 2.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Basílica_-_interior_(1503070133).jpg",
+  "usedFor": "텍스처: floor_medallion, marble_salmon",
+  "thumbName": "interior_011"
+ },
+ {
+  "title": "File:Boltozat díszítése 1.JPG",
+  "author": "Ivanhoe",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Boltozat_díszítése_1.JPG",
+  "usedFor": "텍스처: coffer_oct, floor_checker, floor_medallion, frieze_rinceau, gold_leaf, marble_blue, stucco_cream",
+  "thumbName": "interior_017"
+ },
+ {
+  "title": "File:Boltozat díszítése 3.jpg",
+  "author": "Ivanhoe",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Boltozat_díszítése_3.jpg",
+  "usedFor": "텍스처: coffer_oct, floor_checker, floor_medallion, gold_leaf, marble_blue, marble_salmon, soffit_oct2, stucco_cream",
+  "thumbName": "interior_019"
+ },
+ {
+  "title": "File:Budapest (3899037592).jpg",
+  "author": "Avinash Bhat",
+  "license": "CC BY-SA 2.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Budapest_(3899037592).jpg",
+  "usedFor": "텍스처: floor_medallion, marble_salmon",
+  "thumbName": "interior_022"
+ },
+ {
+  "title": "File:Budapest - Szent István Bazilika, St. Stephen's Basilica - panoramio (2).jpg",
+  "author": "Zdvihak",
+  "license": "CC BY 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Budapest_-_Szent_István_Bazilika,_St._Stephen's_Basilica_-_panoramio_(2).jpg",
+  "usedFor": "텍스처: marble_green",
+  "thumbName": "interior_023"
+ },
+ {
+  "title": "File:Budapest Basilika Sz. István Innen 01.JPG",
+  "author": "Zairon",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Budapest_Basilika_Sz._István_Innen_01.JPG",
+  "usedFor": "텍스처: floor_checker, floor_medallion, marble_cream, marble_salmon",
+  "thumbName": "interior_025"
+ },
+ {
+  "title": "File:Hungary-02482 - Church Nave (31770789914).jpg",
+  "author": "Dennis G. Jarvis",
+  "license": "CC BY-SA 2.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Hungary-02482_-_Church_Nave_(31770789914).jpg",
+  "usedFor": "텍스처: floor_checker, marble_red, pew_panel, wood_oak",
+  "thumbName": "interior_084"
+ },
+ {
+  "title": "File:Inside St Stephen's Basilica (26851694264).jpg",
+  "author": "Erik Cleves Kristensen",
+  "license": "CC BY 2.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Inside_St_Stephen's_Basilica_(26851694264).jpg",
+  "usedFor": "재질 판단 참고(코퍼 종류, 붉은 대리석 색 확인). 픽셀 미사용",
+  "thumbName": "interior_089"
+ }
+]
