@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231c140f'/%3E%3Cpath d='M6 26V14a10 10 0 0 1 20 0v12z' fill='none' stroke='%23c9a24a' stroke-width='2.5'/%3E%3C/svg%3E" />
+    <title>Szent István-bazilika 가상 투어</title>
+    <meta name="description" content="부다페스트 성 이슈트반 대성당 내부를 three.js로 재현한 가상 투어" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Gowun+Batang:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <canvas id="scene" aria-label="성당 내부 3D 장면. 끌어서 둘러보고 바닥을 눌러 이동해요."></canvas>
+    <div id="markers"></div>
+
+    <header class="mast">
+      <p class="mast-hu" lang="hu">Szent István-bazilika</p>
+      <p class="mast-ko">부다페스트 성 이슈트반 대성당</p>
+    </header>
+
+    <div class="timebar" role="group" aria-label="시간대">
+      <svg class="tb-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.6"/><g stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 2.5v2.6M12 18.9v2.6M2.5 12h2.6M18.9 12h2.6M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/></g></svg>
+      <input id="time" type="range" min="0" max="24" step="0.25" value="14" aria-label="시간대 (부다페스트 시각)" />
+      <output id="time-label" for="time">오후 2:00</output>
+      <span id="time-phase" class="tb-phase">한낮</span>
+      <button id="time-now" type="button" title="부다페스트 현재 시각으로">지금</button>
+    </div>
+
+    <nav class="tools" aria-label="보기 도구">
+      <button id="btn-sound" type="button" aria-pressed="false">오르간 소리</button>
+      <button id="btn-help" type="button">조작법</button>
+      <button id="btn-full" type="button">전체 화면</button>
+      <button id="btn-credits" type="button">사진 출처</button>
+    </nav>
+
+    <aside id="placard" class="placard" hidden aria-live="polite">
+      <div class="pl-head">
+        <span id="pl-num" class="pl-num" aria-hidden="true">I</span>
+        <div>
+          <h2 id="pl-title"></h2>
+          <p id="pl-hu" class="pl-hu" lang="hu"></p>
+        </div>
+      </div>
+      <div class="pl-fold-area">
+        <div id="pl-body" class="pl-body"></div>
+        <dl id="pl-facts" class="pl-facts"></dl>
+        <button id="pl-coin" class="pl-coin" type="button" hidden>동전 넣고 조명 켜기</button>
+      </div>
+      <div class="pl-nav">
+        <button id="pl-prev" type="button">이전</button>
+        <span id="pl-count" class="pl-count">1 / 8</span>
+        <button id="pl-next" class="primary" type="button">다음 장소</button>
+      </div>
+      <div class="pl-sub">
+        <button id="pl-auto" type="button" aria-pressed="false">자동 안내 시작</button>
+        <button id="pl-fold" type="button" aria-expanded="true">설명 접기</button>
+      </div>
+    </aside>
+
+    <figure class="plan">
+      <canvas id="plan" role="img" aria-label="평면도. 로마 숫자를 누르면 그 장소로 이동해요."></canvas>
+    </figure>
+
+    <div id="hint" class="hint" hidden role="status">
+      <p>끌어서 둘러보고, 바닥을 누르면 그 자리로 걸어가요.</p>
+      <p class="hint-keys">W A S D나 방향키로 걷고, 휠로 확대해요. N과 P로 다음, 이전 장소로 가요.</p>
+      <p>위쪽 시간 막대를 밀면 부다페스트의 실제 해 위치에 맞춰 빛이 바뀌어요.</p>
+      <p class="hint-note">위키미디어 공용의 공개 사진으로 재질과 그림을 입힌 재현이에요. 조각상과 일부 장식은 사진을 보고 모델링했어요.</p>
+    </div>
+
+    <dialog id="credits" class="credits" aria-labelledby="credits-title">
+      <h2 id="credits-title">사진 출처</h2>
+      <p class="credits-lead">이 장면의 돔, 그림, 스테인드글라스, 재질은 위키미디어 공용의 공개 사진을 원근 보정하거나 곡면에 펴서 만들었어요. 각 사진의 저작자와 라이선스는 아래와 같아요.</p>
+      <ul id="credits-list"></ul>
+      <form method="dialog"><button type="submit">닫기</button></form>
+    </dialog>
+
+    <section id="intro" class="intro">
+      <div class="intro-inner">
+        <h1 lang="hu"><span>Szent István-</span><span>bazilika</span></h1>
+        <p class="intro-lead">부다페스트 성 이슈트반 대성당 안을 걸어 보세요. 여덟 자리에서 이 건물의 이야기를 들려드려요.</p>
+        <button id="enter" type="button" disabled>불러오는 중</button>
+        <p id="status" class="intro-status" role="status">대리석을 다듬는 중</p>
+      </div>
+    </section>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
