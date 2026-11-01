@@ -1,0 +1,388 @@
+[
+ {
+  "id": "benczur-st-stephen-offers-crown",
+  "title": "성 이슈트반이 성모에게 왕관(나라)을 바침 (Szent István felajánlja a koronát Szűz Máriának)",
+  "artist": "벤추르 줄러 (Benczúr Gyula), 1901",
+  "kind": "painting",
+  "widthM": 2.0,
+  "heightM": 3.2,
+  "shape": "arch-top (아래 직사각형 + 위 반원, 반지름 = 폭/2, 스프링은 위에서 폭/2 지점)",
+  "texture": "art/benczur-st-stephen-offers-crown.jpg",
+  "mask": "art/benczur-st-stephen-offers-crown_mask.png",
+  "location": {
+   "description": "남쪽 익랑 끝벽 제단(나지보더숀 제단, Nagyboldogasszony-oltár). 왼쪽 성 임레, 오른쪽 성 머르기트 조각상 사이 대리석 아이디큘라 안. 위로 성관(왕관) 반원창.",
+   "arm": "south",
+   "wall": "south transept end wall, faces -x (북쪽, 교차부 쪽)",
+   "approx": [
+    24.5,
+    4.8,
+    0.0
+   ],
+   "bottomY": 3.2
+  },
+  "facing": [
+   -1,
+   0,
+   0
+  ],
+  "confidence": "위치: 중간(Prakfalvi 2003 안내서 + 공식 누리집 순서 + 설교단 방향으로 반대편이 성 십자가임을 확인), 크기: 중간(±10%, 사람·성인상 대비)",
+  "notes": "질감 원본은 정면에 가까운 PD 복제 사진(제단 십자가 가림 없음). 색은 현장 사진(Terbócs)과 호모그래피 정합(NCC 0.85) 후 선형 RGB 색 변환 + 저주파 Lab 보정으로 맞추고, 그 사진의 흰 대리석 기준으로 화이트밸런스.",
+  "sources": [
+   "https://commons.wikimedia.org/wiki/File:Benczúr_-_Painting_of_St_Stephen_in_the_Basilica_of_Budapest.jpg",
+   "https://commons.wikimedia.org/wiki/File:Bazilika_Benczur-oltarkep.jpg"
+  ]
+ },
+ {
+  "id": "stetka-holy-cross",
+  "title": "십자가 위의 그리스도 (성 십자가 제단, Szent Kereszt-oltár)",
+  "artist": "스테트커 줄러 (Stetka Gyula)",
+  "kind": "painting",
+  "widthM": 2.0,
+  "heightM": 3.56,
+  "shape": "arch-top (아래 직사각형 + 위 반원, 반지름 = 폭/2)",
+  "texture": "art/stetka-holy-cross.jpg",
+  "mask": "art/stetka-holy-cross_mask.png",
+  "location": {
+   "description": "북쪽 익랑 끝벽 제단. 왼쪽 아시시 성 프란치스코, 오른쪽 성 알로이시오 곤자가(둘 다 슈트로블 얼러요시) 조각상. 위로 교황청 문장(열쇠) 반원창. 벤추르 제단과 마주 보는 대칭 제단.",
+   "arm": "north",
+   "wall": "north transept end wall, faces +x",
+   "approx": [
+    -24.5,
+    5.0,
+    0.0
+   ],
+   "bottomY": 3.2
+  },
+  "facing": [
+   1,
+   0,
+   0
+  ],
+  "confidence": "위치: 중간-높음(Zairon 사진에서 설교단이 오른쪽 = 북쪽 익랑), 크기: 중간(벤추르 제단과 같은 폭으로 가정, 성인상 대비 비율 일치)",
+  "notes": "Jarvis 원본(6000px)을 키스톤 호모그래피(반원 머리 가정)로 펴고, 제단 십자가는 지움. 원본은 창 반사광으로 뿌옇게 떠 있어 Dezidor 사진(정합 NCC 0.79)의 저주파 밝기를 쓰고 어두운 곳의 얼룩 디테일을 줄임.",
+  "sources": [
+   "https://commons.wikimedia.org/wiki/File:Hungary-02484_-_Side_Altar_(32235201330).jpg",
+   "https://commons.wikimedia.org/wiki/File:Budapešť_0878.jpg"
+  ]
+ },
+ {
+  "id": "feszty-st-joseph-triptych",
+  "title": "성 요셉 세폭화 (가운데 성 요셉과 아기 예수, 왼쪽 성 베드로, 오른쪽 성 바오로)",
+  "artist": "페스티 아르파드 (Feszty Árpád)",
+  "kind": "painting",
+  "widthM": 2.6,
+  "heightM": 1.61,
+  "shape": "rect (금박 필라스터 2개 포함. 각 패널 머리의 아치는 그려진 것)",
+  "texture": "art/feszty-st-joseph-triptych.jpg",
+  "mask": null,
+  "location": {
+   "description": "성 요셉 제단. 공식 누리집 순서상 성 십자가 제단 다음, 성 임레 제단 앞 → 북동쪽 모서리 칸(성소 북쪽)으로 추정. 위 창은 성 안드레아.",
+   "arm": "northeast corner bay (추정)",
+   "wall": "outer north wall, faces +x (추정)",
+   "approx": [
+    -24.0,
+    2.9,
+    -17.5
+   ],
+   "bottomY": 2.1
+  },
+  "facing": [
+   1,
+   0,
+   0
+  ],
+  "confidence": "위치: 낮음(측면 제단 배치 공식 도면 미확인), 크기: 낮음(±25%)",
+  "notes": "거의 정면 사진이라 4점 크롭 수준의 보정. 가운데 아래는 감실 윗부분이 가려 실제 모습 그대로 둠(채워 넣으면 더 어색). 좌우 끝은 바깥 필라스터 안쪽 모서리.",
+  "sources": [
+   "https://commons.wikimedia.org/wiki/File:Feszty_Árpád-Szent_József.jpg"
+  ]
+ },
+ {
+  "id": "vastagh-st-imre",
+  "title": "동정 서원을 하는 성 임레 왕자",
+  "artist": "버스터그 죄르지 (id. Vastagh György)",
+  "kind": "painting",
+  "widthM": 1.8,
+  "heightM": 3.38,
+  "shape": "rect",
+  "texture": "art/vastagh-st-imre.jpg",
+  "mask": null,
+  "location": {
+   "description": "성 임레 제단(녹색 대리석 기둥 2개). 앞에 복녀 기젤라 유해함(유리 종)이 있음. 위 창은 하인리히 2세 황제. 공식 누리집 순서상 벤추르 제단 바로 앞 → 남동쪽 모서리 칸으로 추정.",
+   "arm": "southeast corner bay (추정)",
+   "wall": "outer south wall, faces -x (추정)",
+   "approx": [
+    24.0,
+    3.8,
+    -17.5
+   ],
+   "bottomY": 2.1
+  },
+  "facing": [
+   -1,
+   0,
+   0
+  ],
+  "confidence": "위치: 낮음(측면 제단 배치 공식 도면 미확인), 크기: 낮음(±25%)",
+  "notes": "키스톤 보정. 아래 12%는 유해함 유리 종과 글라디올러스 꽃이 가림(그대로 둠).",
+  "sources": [
+   "https://commons.wikimedia.org/wiki/File:Vastagh_György-Szt_Imre_herceg.jpg"
+  ]
+ },
+ {
+  "id": "nadler-st-cecilia",
+  "title": "성 체칠리아 (오르간 앞의 성녀와 노래하는 천사들)",
+  "artist": "나들레르 로베르트 (Nádler Róbert)",
+  "kind": "painting",
+  "widthM": 2.2,
+  "heightM": 1.43,
+  "shape": "triple-arch (한 장의 그림 위에 반원 아치 3개 틀, 금박 작은 기둥 4개 포함)",
+  "texture": "art/nadler-st-cecilia.jpg",
+  "mask": "art/nadler-st-cecilia_mask.png",
+  "location": {
+   "description": "성 체칠리아 제단(교회 음악의 수호성인). 공식 누리집: 입구 근처. 위 창은 알렉산드리아의 성 가타리나 → 남서쪽 모서리 칸(오른쪽 측랑 입구 쪽)으로 추정. 제단 꼭대기 페디먼트에 성부 그림이 따로 있음(미처리).",
+   "arm": "southwest corner bay (추정)",
+   "wall": "outer south wall, faces -x (추정)",
+   "approx": [
+    24.0,
+    3.0,
+    17.5
+   ],
+   "bottomY": 2.3
+  },
+  "facing": [
+   -1,
+   0,
+   0
+  ],
+  "confidence": "위치: 낮음(측면 제단 배치 공식 도면 미확인), 크기: 낮음(±25%)",
+  "notes": "정면 사진, 크롭 수준 보정. 마스크는 세 아치(외곽 몰딩 포함) 아래 전체. 아래 가장자리에 글라디올러스 잎 끝이 조금 남음.",
+  "sources": [
+   "https://commons.wikimedia.org/wiki/File:Nádler_Róbert-Szent_Cecília.jpg"
+  ]
+ },
+ {
+  "id": "window-st-catherine",
+  "title": "알렉산드리아의 성 가타리나 (STA CATHERINA, 위: SCIENTIA 책)",
+  "artist": "로트 믹사 공방(Róth Miksa) 계열 추정. 레오폴트 창은 2003년 작",
+  "kind": "stained-glass",
+  "widthM": 2.0,
+  "heightM": 4.9,
+  "shape": "round-arch window (직사각형 + 반원 머리, 높이 = 폭×2.45)",
+  "texture": "art/window-st-catherine.jpg",
+  "mask": "art/window-st-catherine_mask.png",
+  "location": {
+   "description": "성 체칠리아 제단 위. 측면 제단 레타블 바로 위, 아랫부분은 제단 꼭대기 뒤에 숨음.",
+   "arm": "southwest corner bay (추정)",
+   "wall": "outer south wall, faces -x (추정)",
+   "approx": [
+    24.5,
+    8.5,
+    17.5
+   ],
+   "bottomY": 6.0
+  },
+  "facing": [
+   -1,
+   0,
+   0
+  ],
+  "confidence": "위치: 낮음(측면 제단 배치 공식 도면 미확인), 크기: 낮음(±25%)",
+  "notes": "네 창이 같은 도안 틀이라 같은 비율로 맞춤. 바깥 유리 경계를 법선 방향 밝기로 찾아 \"수평선은 수평\" 키스톤 호모그래피 + 반원 머리 모델로 맞춤(잔차 약 2px). 아래 가운데는 나들레르 제단 꼭대기(어두운 실루엣)가 가림. 네 창 공통 이득으로 밝은 유리를 따뜻한 흰색(226,222,205)에 맞춤. 일부 흰 유리는 원본에서 255로 포화.",
+  "sources": [
+   "https://commons.wikimedia.org/wiki/File:Budapest_St._Stephan_800.jpg"
+  ]
+ },
+ {
+  "id": "window-st-leopold",
+  "title": "오스트리아의 성 레오폴트 (ST LEOPOLDUS, 위: 오스트리아 문장)",
+  "artist": "로트 믹사 공방(Róth Miksa) 계열 추정. 레오폴트 창은 2003년 작",
+  "kind": "stained-glass",
+  "widthM": 2.0,
+  "heightM": 4.9,
+  "shape": "round-arch window (직사각형 + 반원 머리, 높이 = 폭×2.45)",
+  "texture": "art/window-st-leopold.jpg",
+  "mask": "art/window-st-leopold_mask.png",
+  "location": {
+   "description": "성 아달베르트 제단 위(공식 누리집: 2003년 설치). 측면 제단 레타블 바로 위, 아랫부분은 제단 꼭대기 뒤에 숨음.",
+   "arm": "northwest corner bay (왼쪽 측랑 입구 옆, 추정)",
+   "wall": "outer north wall, faces +x (추정)",
+   "approx": [
+    -24.5,
+    8.5,
+    17.5
+   ],
+   "bottomY": 6.0
+  },
+  "facing": [
+   1,
+   0,
+   0
+  ],
+  "confidence": "위치: 낮음(측면 제단 배치 공식 도면 미확인), 크기: 낮음(±25%)",
+  "notes": "네 창이 같은 도안 틀이라 같은 비율로 맞춤. 바깥 유리 경계를 법선 방향 밝기로 찾아 \"수평선은 수평\" 키스톤 호모그래피 + 반원 머리 모델로 맞춤(잔차 약 2px). 아래 가운데 삼각 페디먼트와 종려잎 장식이 가려 어둡게 칠함. 네 창 공통 이득으로 밝은 유리를 따뜻한 흰색(226,222,205)에 맞춤. 일부 흰 유리는 원본에서 255로 포화.",
+  "sources": [
+   "https://commons.wikimedia.org/wiki/File:Budapest_St._Stephan_801.jpg"
+  ]
+ },
+ {
+  "id": "window-st-henry",
+  "title": "성 하인리히 2세 황제 (ST HENRICUS, 위: 성당 모형)",
+  "artist": "로트 믹사 공방(Róth Miksa) 계열 추정. 레오폴트 창은 2003년 작",
+  "kind": "stained-glass",
+  "widthM": 2.0,
+  "heightM": 4.9,
+  "shape": "round-arch window (직사각형 + 반원 머리, 높이 = 폭×2.45)",
+  "texture": "art/window-st-henry.jpg",
+  "mask": "art/window-st-henry_mask.png",
+  "location": {
+   "description": "성 임레 제단 위. 측면 제단 레타블 바로 위, 아랫부분은 제단 꼭대기 뒤에 숨음.",
+   "arm": "southeast corner bay (추정)",
+   "wall": "outer south wall, faces -x (추정)",
+   "approx": [
+    24.5,
+    8.5,
+    -17.5
+   ],
+   "bottomY": 6.0
+  },
+  "facing": [
+   -1,
+   0,
+   0
+  ],
+  "confidence": "위치: 낮음(측면 제단 배치 공식 도면 미확인), 크기: 낮음(±25%)",
+  "notes": "네 창이 같은 도안 틀이라 같은 비율로 맞춤. 바깥 유리 경계를 법선 방향 밝기로 찾아 \"수평선은 수평\" 키스톤 호모그래피 + 반원 머리 모델로 맞춤(잔차 약 2px). 아래쪽(v>2.1)은 원호 페디먼트가 가려 어둡게 칠함. 네 창 공통 이득으로 밝은 유리를 따뜻한 흰색(226,222,205)에 맞춤. 일부 흰 유리는 원본에서 255로 포화.",
+  "sources": [
+   "https://commons.wikimedia.org/wiki/File:Budapest_St._Stephan_810.jpg"
+  ]
+ },
+ {
+  "id": "window-st-andrew",
+  "title": "사도 성 안드레아 (ST ANDREAS AP, 위: X자 십자가 문장)",
+  "artist": "로트 믹사 공방(Róth Miksa) 계열 추정. 레오폴트 창은 2003년 작",
+  "kind": "stained-glass",
+  "widthM": 2.0,
+  "heightM": 4.9,
+  "shape": "round-arch window (직사각형 + 반원 머리, 높이 = 폭×2.45)",
+  "texture": "art/window-st-andrew.jpg",
+  "mask": "art/window-st-andrew_mask.png",
+  "location": {
+   "description": "성 요셉 제단 위. 측면 제단 레타블 바로 위, 아랫부분은 제단 꼭대기 뒤에 숨음.",
+   "arm": "northeast corner bay (추정)",
+   "wall": "outer north wall, faces +x (추정)",
+   "approx": [
+    -24.5,
+    8.5,
+    -17.5
+   ],
+   "bottomY": 6.0
+  },
+  "facing": [
+   1,
+   0,
+   0
+  ],
+  "confidence": "위치: 낮음(측면 제단 배치 공식 도면 미확인), 크기: 낮음(±25%)",
+  "notes": "네 창이 같은 도안 틀이라 같은 비율로 맞춤. 바깥 유리 경계를 법선 방향 밝기로 찾아 \"수평선은 수평\" 키스톤 호모그래피 + 반원 머리 모델로 맞춤(잔차 약 2px). 아래쪽(v>2.1)은 원호 페디먼트가 가려 어둡게 칠함. 네 창 공통 이득으로 밝은 유리를 따뜻한 흰색(226,222,205)에 맞춤. 일부 흰 유리는 원본에서 255로 포화.",
+  "sources": [
+   "https://commons.wikimedia.org/wiki/File:Budapest_St._Stephan_814.jpg"
+  ]
+ },
+ {
+  "id": "lunette-holy-crown",
+  "title": "반원창: 헝가리 성관(성 이슈트반 왕관)과 빛살",
+  "artist": "로트 믹사 공방(Róth Miksa) 추정",
+  "kind": "stained-glass",
+  "widthM": 6.8,
+  "heightM": 3.85,
+  "shape": "lunette (반원 + 아래 띠, 띠 높이 = 폭×0.066, 전체 높이 = 폭×0.566)",
+  "texture": "art/lunette-holy-crown.jpg",
+  "mask": "art/lunette-holy-crown_mask.png",
+  "location": {
+   "description": "남쪽 익랑 끝벽, 벤추르 제단 위 높은 곳. 익랑 배럴 볼트 아래 끝벽, 주 엔타블러처 바로 위.",
+   "arm": "south",
+   "wall": "south transept end wall, faces -x",
+   "approx": [
+    25.5,
+    15.5,
+    0.0
+   ],
+   "bottomY": 13.6
+  },
+  "facing": [
+   -1,
+   0,
+   0
+  ],
+  "confidence": "위치: 중간-높음(익랑 끝벽 위), 크기: 중간(제단화 폭의 3.3~3.5배), 높이: 낮음-중간",
+  "notes": "바깥 검은 철틀 기준. 아래에서 올려 찍은 세로 단축(0.93)을 반원 가정으로 되돌림.",
+  "sources": [
+   "https://commons.wikimedia.org/wiki/File:Budapest_St._Stephan_802.jpg"
+  ]
+ },
+ {
+  "id": "lunette-holy-see",
+  "title": "반원창: 교황청 문장(교차한 열쇠와 삼층관)과 빛살",
+  "artist": "로트 믹사 공방(Róth Miksa) 추정",
+  "kind": "stained-glass",
+  "widthM": 6.8,
+  "heightM": 3.85,
+  "shape": "lunette (반원 + 아래 띠, 띠 높이 = 폭×0.066, 전체 높이 = 폭×0.566)",
+  "texture": "art/lunette-holy-see.jpg",
+  "mask": "art/lunette-holy-see_mask.png",
+  "location": {
+   "description": "북쪽 익랑 끝벽, 성 십자가 제단 위 높은 곳. 익랑 배럴 볼트 아래 끝벽, 주 엔타블러처 바로 위.",
+   "arm": "north",
+   "wall": "north transept end wall, faces +x",
+   "approx": [
+    -25.5,
+    15.5,
+    0.0
+   ],
+   "bottomY": 13.6
+  },
+  "facing": [
+   1,
+   0,
+   0
+  ],
+  "confidence": "위치: 중간-높음(익랑 끝벽 위), 크기: 중간(제단화 폭의 3.3~3.5배), 높이: 낮음-중간",
+  "notes": "바깥 검은 철틀 기준. 아래에서 올려 찍은 세로 단축(0.93)을 반원 가정으로 되돌림.",
+  "sources": [
+   "https://commons.wikimedia.org/wiki/File:Budapest_St._Stephan_808.jpg"
+  ]
+ },
+ {
+  "id": "apse_halfdome",
+  "title": "후진 반돔 모자이크: 미사의 알레고리(성배와 천사들), 루네트 3개, 천창",
+  "artist": "벤추르 줄러 (Benczúr Gyula) 밑그림의 모자이크",
+  "kind": "mosaic",
+  "widthM": 28.27,
+  "heightM": 14.14,
+  "shape": "quarter-sphere: SphereGeometry(R=9, 64, 32, phiStart=π, phiLength=π, thetaStart=0, thetaLength=π/2), 중심 (0, 14.6, -18). widthM = 기점선 호 길이 πR, heightM = 자오선 호 길이 πR/2",
+  "texture": "art/apse_halfdome.jpg",
+  "mask": null,
+  "uv": "u = (φ-π)/π (u=0 = +x 남쪽, u=1 = -x 북쪽), v = 1 - θ/(π/2) (정점 v=1, 기점선 v=0). 파일 맨 윗줄 = v=1 (three.js 기본 flipY=true). 안쪽에서 보는 면이라 파일을 그냥 보면 좌우가 뒤집혀 보이는 것이 정상",
+  "location": {
+   "description": "주 제단 뒤 후진의 반돔. 기점선(y=14.6)은 명문 띠 윗선, 정점 y=23.6, 교차부 쪽 아치면은 z=-18 평면. 패널 5칸(가운데 칸 = 성배를 든 천사), 리브 4개, 아래 루네트 3개(창이 아니라 명판 그림), 꼭대기 천창 유리.",
+   "arm": "apse",
+   "wall": "apse half-dome (concave, faces +z)",
+   "approx": [
+    0.0,
+    19.1,
+    -22.5
+   ]
+  },
+  "facing": [
+   0,
+   0,
+   1
+  ],
+  "confidence": "카메라 재투영 오차: 기점선 4.0px, 천창 테 0.7px, 루네트 꼭짓점 2.5~8.5px(반크기 2448px 기준). 같은 시점 재렌더 고주파 NCC 0.95(2px 밀면 0.47). 다른 사진(20180824) 시점 교차 확인에서 위치 차이 약 6~18px(1280px 사진, 0.2~0.5 m 상당)",
+  "notes": "실사 비율: 텍셀의 약 37%가 사진에서 직접 온 것. 나머지 채움: 바깥 두 패널(u<0.21, u>0.79, 그림+스팬드럴)은 반대쪽 안쪽 패널을 거울로 옮긴 합성, 바깥 루네트와 프리즈는 옆 칸(33.9° 주기)을 그대로 복제, 천창 유리는 20° 한 칸을 둘레로 타일링하고 정점 쪽은 납선을 세로로 연장, 제단 천사상에 가린 가운데 아래 프리즈는 옆 칸 복제. 채운 곳은 주변 실제 픽셀의 저주파 색에 맞춤. 노출 x1.75(선형), 금빛 색상만 채도 x1.3.",
+  "sources": [
+   "https://commons.wikimedia.org/wiki/File:Budapest_St._Stephan_806.jpg"
+  ]
+ }
+]
