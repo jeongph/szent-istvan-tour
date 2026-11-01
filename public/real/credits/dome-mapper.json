@@ -1,0 +1,51 @@
+[
+ {
+  "title": "File:Budapest church dome.jpg",
+  "author": "Wilfredor",
+  "license": "CC0",
+  "url": "https://commons.wikimedia.org/wiki/File:Budapest_church_dome.jpg",
+  "usedFor": "sky.jpg 돔 영역(천정각 0~15도) 원천, zenith.jpg 원천"
+ },
+ {
+  "title": "File:Dome of St. Stephens Basilica (6002396105).jpg",
+  "author": "Alex Proimos from Sydney, Australia",
+  "license": "CC BY 2.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Dome_of_St._Stephens_Basilica_(6002396105).jpg",
+  "usedFor": "sky.jpg 드럼, 회랑, 펜던티브, 아치 영역(15~45도) 원천, 각도 척도 기준"
+ },
+ {
+  "title": "File:Hungary-02453 - Church Dome (31770645344).jpg",
+  "author": "Dennis G. Jarvis",
+  "license": "CC BY-SA 2.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Hungary-02453_-_Church_Dome_(31770645344).jpg",
+  "usedFor": "sky.jpg 아래쪽 영역의 낮 색/조명 기준(재조명 이득장), 정합 확인"
+ },
+ {
+  "title": "File:Hungary-02446 - Ceiling and Dome (32613938465).jpg",
+  "author": "Dennis G. Jarvis",
+  "license": "CC BY-SA 2.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Hungary-02446_-_Ceiling_and_Dome_(32613938465).jpg",
+  "usedFor": "분석만: 초점거리 교차 검증, 동쪽 방위 확인, 비교 이미지"
+ },
+ {
+  "title": "File:Budapest - Saint Stephen's Basilica - Interior.jpg",
+  "author": "Christian Thiele",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Budapest_-_Saint_Stephen's_Basilica_-_Interior.jpg",
+  "usedFor": "분석만: 북쪽 트란셉트 방향으로 방위 결정"
+ },
+ {
+  "title": "File:Budapest Saint Stephen's Basilica dome.jpg",
+  "author": "Dennis G. Jarvis",
+  "license": "CC BY-SA 2.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Budapest_Saint_Stephen's_Basilica_dome.jpg",
+  "usedFor": "분석만: 초점거리 교차 검증"
+ },
+ {
+  "title": "File:Coupole Basilique Saint-Etienne Budapest.jpg",
+  "author": "Yelkrokoyade",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Coupole_Basilique_Saint-Etienne_Budapest.jpg",
+  "usedFor": "분석만: 고리 각도 크기 점검"
+ }
+]

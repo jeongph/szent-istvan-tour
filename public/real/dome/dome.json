@@ -1,0 +1,219 @@
+{
+ "status": "v2 (f=2600, 후처리 반영)",
+ "map": {
+  "file": "dome/sky.jpg",
+  "mask": "dome/sky_mask.png",
+  "zenith": {
+   "file": "dome/zenith.jpg",
+   "size": 4096,
+   "thetaZDeg": 16.0,
+   "mapping": "방향 d(시점 P 기준, d.y>0)에 대해 s = d.x/d.y, t = d.z/d.y, T = tan(16deg). u = 0.5 + s/(2T) (왼쪽0->오른쪽1), v = 0.5 + t/(2T) (이미지 위쪽 행 0 -> 아래쪽 1). 이미지 위쪽 = -z(제단, 동), 오른쪽 = +x(남). tan(theta) <= T 이면 sky.jpg 대신 이 텍스처를 쓰면 돔(0~15도)이 원본 해상도(약 5800 px/rad)로 보임. 경계(14~16도)는 sky.jpg 와 같은 색이라 섞어도 됨"
+  },
+  "width": 4096,
+  "height": 2048,
+  "thetaMaxDeg": 45.0,
+  "u": "phi / (2*pi), phi = atan2(dx, -dz) in [0, 2pi), phi=0 = 주 제단(동, -z), phi=90deg = +x(남)",
+  "v": "theta / thetaMax, 이미지 맨 위 행(v=0) = 천정(theta=0), 아래로 선형",
+  "viewpoint": {
+   "P": [
+    0,
+    1.6,
+    0
+   ],
+   "note": "사진들은 교차부 중심 바닥 근처에서 거의 수직으로 찍힘. 형상 계산은 P 높이 1.6 m 기준"
+  },
+  "maskNote": "sky_mask.png 흰색 = 실제 사진 있음, 검정 = 사진 없음(sky.jpg 에는 위 행을 아래로 늘인 흐린 채움이 들어 있음)"
+ },
+ "cameraHeightM": 1.6,
+ "angularScale": {
+  "refFocalPx079": 2600.0,
+  "note": "모든 천정각은 기준 사진(dome_079, Canon 5D, 22 mm) 초점거리에 비례. 불확실성 약 +-3%"
+ },
+ "featuresThetaDeg": [
+  {
+   "name": "paintingEdge",
+   "ko": "정점 원판(성부 그림) 가장자리",
+   "thetaDeg": 3.697,
+   "y": 55.11,
+   "rho": 3.46,
+   "note": "반구 돔 가정"
+  },
+  {
+   "name": "oculiRing8",
+   "ko": "금테 고리의 둥근 구멍 8개 중심",
+   "thetaDeg": 5.449,
+   "y": 54.45,
+   "rho": 5.04,
+   "note": "반구 돔 가정"
+  },
+  {
+   "name": "coffersTop",
+   "ko": "격자 칸(코퍼) 띠 위 끝",
+   "thetaDeg": 6.778,
+   "y": 53.76,
+   "rho": 6.2,
+   "note": "반구 돔 가정"
+  },
+  {
+   "name": "windowTop",
+   "ko": "돔 창(8개) 위 끝",
+   "thetaDeg": 12.47,
+   "y": 48.4,
+   "rho": 10.35,
+   "note": "반구 돔 가정"
+  },
+  {
+   "name": "windowBottom",
+   "ko": "돔 창 아래 끝",
+   "thetaDeg": 14.14,
+   "y": 45.21,
+   "rho": 10.99,
+   "note": "반구 돔 가정"
+  },
+  {
+   "name": "domeSpring",
+   "ko": "돔 밑단 코니스 윗면(돔 기점)",
+   "thetaDeg": 14.326,
+   "y": 44.67,
+   "rho": 11.0,
+   "note": ""
+  },
+  {
+   "name": "corniceBottom",
+   "ko": "돔 밑단 코니스 아랫면",
+   "thetaDeg": 15.397,
+   "y": 41.54,
+   "rho": 11.0,
+   "note": "반지름 11 m 원통 가정"
+  },
+  {
+   "name": "capitalTop",
+   "ko": "드럼 기둥머리 위",
+   "thetaDeg": 15.989,
+   "y": 39.99,
+   "rho": 11.0,
+   "note": "반지름 11 m 원통 가정"
+  },
+  {
+   "name": "capitalBottom",
+   "ko": "드럼 기둥머리 아래",
+   "thetaDeg": 16.901,
+   "y": 37.8,
+   "rho": 11.0,
+   "note": "반지름 11 m 원통 가정"
+  },
+  {
+   "name": "drumWallBottom",
+   "ko": "드럼 벽(대리석 판) 아래 끝",
+   "thetaDeg": 20.266,
+   "y": 31.39,
+   "rho": 11.0,
+   "note": "반지름 11 m 원통 가정"
+  },
+  {
+   "name": "galleryParapetTop",
+   "ko": "드럼 바닥 회랑 난간 윗면",
+   "thetaDeg": 20.653,
+   "y": 30.78,
+   "rho": 11.0,
+   "note": "반지름 11 m 원통 가정"
+  },
+  {
+   "name": "bracketCorniceBottom",
+   "ko": "까치발 코니스 아랫면",
+   "thetaDeg": 23.676,
+   "y": 26.69,
+   "rho": 11.0,
+   "note": "반지름 11 m 원통 가정"
+  },
+  {
+   "name": "ringTop",
+   "ko": "드럼 바닥 고리(펜던티브 위 고리) 윗면",
+   "thetaDeg": 23.86,
+   "y": 26.47,
+   "rho": 11.0,
+   "note": "반지름 11 m 원통 가정"
+  },
+  {
+   "name": "ringBottom",
+   "ko": "드럼 바닥 고리 아랫면 = 펜던티브 위 끝",
+   "thetaDeg": 24.502,
+   "y": 25.74,
+   "rho": 11.0,
+   "note": "반지름 11 m 원통 가정"
+  },
+  {
+   "name": "archCrown",
+   "ko": "교차부 아치 정점(안쪽 면, 반지름 11 m 가정)",
+   "thetaDeg": 24.775,
+   "y": 25.43,
+   "rho": 11.0,
+   "note": "반지름 11 m 원통 가정"
+  },
+  {
+   "name": "pendentivePanelTop",
+   "ko": "펜던티브 복음사가 판 위 끝(대각선 방향)",
+   "thetaDeg": 25.677,
+   "y": null,
+   "rho": null,
+   "note": "대각선 방위(45도+90k)"
+  },
+  {
+   "name": "pendentivePanelBottom",
+   "ko": "펜던티브 복음사가 판 아래 끝(대각선 방향)",
+   "thetaDeg": 37.707,
+   "y": null,
+   "rho": null,
+   "note": "대각선 방위"
+  }
+ ],
+ "geometry": {
+  "drumR": 11.0,
+  "ring": 25.74,
+  "ringTop": 26.47,
+  "galleryY": 30.78,
+  "drumTop": 44.67,
+  "corniceBottom": 41.54,
+  "domeR": 11.0,
+  "domeProfile": "hemisphere centered at drumTop",
+  "windowY": [
+   45.21,
+   48.4
+  ],
+  "oculusR": 3.46,
+  "oculusY": 55.11,
+  "lanternH": 0.6,
+  "archCrownY": 25.43
+ },
+ "realDimensions": [
+  {
+   "what": "안쪽 돔 지름 22 m, 높이 65 m",
+   "source": "https://www.orszagjaro.net/szent-istvan-bazilika/ (\"A nagykupola belső magassága 65 méter, átmérője 22 méter.\"), https://www.hetedhetorszag.hu/magyarorszag/szent-istvan-bazilika, https://mult-kor.hu/tbb-mint-fel-evszazadig-epult-a-szent-istvan-bazilika-20181109"
+  },
+  {
+   "what": "건물 높이 96 m, 길이 87.4 m, 폭 55 m",
+   "source": "hu.wikipedia: Szent István-bazilika (Budapest)"
+  },
+  {
+   "what": "힐드 사망(1867) 때 쌓은 드럼(코니스 직전)이 약 51 m(바깥, 거리 기준으로 추정)",
+   "source": "https://mult-kor.hu/tbb-mint-fel-evszazadig-epult-a-szent-istvan-bazilika-20181109"
+  },
+  {
+   "what": "성소는 규칙대로 동쪽",
+   "source": "https://www2.akg.hu/handabanda/budapest/belvaros/kiss1.html"
+  },
+  {
+   "what": "큰 돔과 펜던티브 모자이크는 로츠 카로이 설계, 펜던티브는 네 복음사가",
+   "source": "orszagjaro.net (위), Prakfalvi: Roman Catholic Churches in Unified Budapest(검색 요약: 마태오는 설교단 위)"
+  }
+ ],
+ "orientation": "phi=0(제단, 동, -z) = 돔 아랫줄 그리스도 판(붉은 옷, 두 팔을 든 인물) 방향 = 드럼 벽감 하나의 방향. 근거 1) dome_010(북쪽 트란셉트를 향함: 오른쪽 기둥에 설교단)에서 정면 위 드럼 그림이 두건 쓴 예언자이고 그리스도 판은 오른쪽(동) 위로 90도 돈 자리. 2) 설교단(북동 교차부 기둥) 위 펜던티브는 천사를 거느린 노인 = 마태오(Prakfalvi: 마태오는 설교단 위). 지도의 phi=315(북동) 펜던티브가 바로 이 그림. 3) dome_083(동쪽 성소 쪽 올려다봄)의 가까운 쪽에 그리스도 판과 벽감, 아래에 성소 볼트가 보임. 축 방향 정밀도: 창 8개와 드럼 16칸의 각도 위상으로 0.1도 이내",
+ "notes": [
+  "각도 척도: 기준 사진 dome_079(Canon EOS 5D, EXIF 22 mm -> 2674 px)를 다른 근거(dome_083 Sony 18 mm 고리 폭, dome_022 Nikon 18 mm, 통합 모델의 고리 높이)와 맞춰 f=2600 px 로 정함. 1차본(2674)보다 천정각이 약 2.8% 커졌고 형상값은 약 3% 낮아짐. 남은 불확실성 약 +-3%",
+  "돔 윤곽은 사진 각도만으로 정해지지 않음: 반구(기점 44.6 m, 정점 원판 약 55.6 m)를 권장. 문헌의 '안쪽 돔 높이 65 m'와는 약 9 m 차이. 비스듬한 사진(dome_083)에서 원판 그림이 금테 고리와 거의 동심이라 깊은 랜턴 통은 없어 보임(lanternH 0.6 m)",
+  "펜던티브(25~38도)는 dome_079(밤, 조명) 기반을 낮 사진 dome_084 색으로 다시 맞추고, 채도와 밝기, 조명 반사를 줄였음. 그림 일부는 여전히 반사 탓에 흐릿함",
+  "회랑 띠(20~21.5도)의 조명 4개와 난간 위 사람 머리/기구는 22.5도 주기 중앙값으로 대체(벽감 칸 제외)",
+  "동, 서 아치 밑면(phi 0, 180 부근)은 28도 아래로 사진이 없음(mask 0). 남, 북 아치는 약 43도까지 있음",
+  "dome_030 의 그리스도 판 위 흰 얼룩(새 또는 조명)은 같은 반지름의 이웃 화소로 메움"
+ ]
+}
